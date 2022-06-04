@@ -3,4 +3,4 @@
 git clone $REPO_URL https://github.com/AKG945488/lucy
 cd lucy
 pip3 install -U -r requirements.txt
-python3 -m LUCY
+python3 -m LUCYs
