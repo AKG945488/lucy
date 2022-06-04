@@ -1,0 +1,71 @@
+{
+  "name": "LUCY Bot",
+  "description": "A LUCY Management Bot Based On Telethon",
+  "keywords": [
+    "LUCY",
+    "open",
+    "source",
+    "multi",
+    "godfather",
+    "LUCY",
+    "management"
+  ],
+  "env": {
+    "REPO_URL": {
+      "description": "URL of the REPO, If You Have edited Repo.. Else Leave ! Don't Change",
+      "value": "repooss"
+    },
+    "TOKEN": {
+      "description": "Bot Token from @botfather..",
+      "value": ""
+    },
+    "DATABASE_URL": {
+      "description": "Database Url from elephantsql.com ..",
+      "value": "postgresql:ur url"
+    },
+    "SUDO_USERS": {
+      "description": "Dev Access Of Your Bot (Id) Go to @missrose_bot And Type /id",
+      "value": ""
+    },
+    "DEV_USERS": {
+      "description": "Dev Access Of Your Bot (Id) Go to @missrose_bot And Type /id..",
+      "value": ""
+    },
+    "GBAN_LOGS": {
+      "description": "Forward Your Channel Message to @missrose_bot To Get Your Channel ID..",
+      "value": "-100"
+    },
+    "MESSAGE_DUMP": {
+      "description": "Forward Your Channel Message to @missrose_bot To Get Your Channel ID..",
+      "value": "-100"
+    },
+    "OWNER_ID": {
+      "description": "Your Id, Go To @missrose_bot Pm and Type /id..",
+      "value": ""
+    },
+    "OWNER_USERNAME": {
+      "description": "Your LUCY Username..",
+      "value": ""
+    },
+    "STRING_SESSION": {
+      "description": "A Telethon String Session Of Dummy Account",
+      "value": ""
+    }
+  },
+  "addons": [
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    },
+    {
+      "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+    }
+  ],
+  "formation": {
+    "worker": {
+      "quantity": 1,
+      "size": "free"
+    }
+  }
+}
