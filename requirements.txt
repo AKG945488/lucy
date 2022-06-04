@@ -8,7 +8,7 @@ currencyconverter
 emoji
 feedparser
 future
-git+https://github.com/python-TARZAN-bot/ptbcontrib.git
+git+https://github.com/python-telegram-bot/ptbcontrib.git
 gitpython
 gpytranslate
 markdown2
